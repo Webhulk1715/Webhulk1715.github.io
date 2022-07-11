@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="weather-ver2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>HOANG HUY WEATHER:DỰ BÁO THỜI TIẾT </title>
+</head>
+
+<body class="body">
+   
+    <!-- <audio autoplay loop>
+        <source src="wt-img/ms-wt.mp3" type="audio/mp3">
+    </audio> -->
+  
+    <div class="title ">
+        <p class="p1">WEATHER TODAY AND TOMORROW AROUND THE WORLD </p>
+        <p class="p2">Dự báo thời tiết trên toàn thế giới, ngày tiếp theo, Mỗi ngày cập nhật 6 tiếng/1 lần</p>
+        <button class="start">Start</button>
+    </div>
+
+    <p class="notification hide">Nhập địa điểm bạn muốn tra cứu thời tiết</p>
+    
+    <div class="wt-card hide">
+        <input class="input" type="text" placeholder="Enter your location">
+        <button class="search-bt"><i class='bx bx-search' ></i></button>
+
+        <div class="div-4">
+
+            <h2 class="location">
+                <span class="city">Thanh Hoa</span>
+                <span>,</span>
+                <span class="country">VIETNAM</span>
+            </h2>
+    
+            <p class="date"></p>
+    
+            <p class="temp-n">
+                <span class="temp-now">20</span> <sup>o</sup>
+            </p>
+    
+            <p class="short">
+                <i class='bx bx-sun bx-spin icon-sun-now' ></i>
+                <i class='bx bx-cloud-light-rain bx-tada icon-rain-now hide' ></i>
+                <i class='bx bx-cloud bx-tada icon-cloud-now hide' ></i>
+                <span class="describe">Sunny</span>
+            </p>
+
+            <!-- <i class='bx bxs-bullseye bx-flashing' ></i>
+            <i class='bx bx-wind bx-flashing' ></i>
+            <i class='bx bx-water bx-flashing' ></i> -->
+    
+            <div class="short-icon">
+                <div class="icon-2">
+                    <i class='bx bxs-bullseye bx-tada' ></i>
+                    <p class="eye">1000m</p>
+                </div>
+    
+                <div class="icon-2">
+                    <i class='bx bx-wind bx-tada' ></i>
+                    <p class="wind">0.27/s</p>
+                </div>
+    
+                <div class="icon-2">
+                    <i class='bx bxs-droplet-half bx-tada' ></i>
+                    <p class="water">30%</p>
+                </div>
+            </div>
+    
+            <p class="date-2">
+                Dự báo các giờ ngày <span class="date-3"></span>
+            </p>
+
+
+           <!-- tem -->
+            <div class="div-2">
+    
+                <div class="icon">
+                    <p class="time">06:00</p>
+                    <i class='bx bx-doughnut-chart bx-spin temp-icon' title="Nhiệt độ"></i>
+                    <span class="temp-6h">23</span><sup>o</sup>  <br>
+                    <i class='bx bx-cloud-light-rain bx-tada icon-rain-6h hide' ></i>
+                    <i class='bx bx-sun bx-spin icon-sun-6h' ></i>
+                    <i class='bx bx-cloud bx-tada icon-cloud-6h hide' title="Mô tả ngắn"></i>
+                    <span class="sky-6h">cloud</span>
+                </div>
+    
+                <div class="icon">
+                    <p class="time">12:00</p>
+                    <i class='bx bx-doughnut-chart bx-spin temp-icon' title="Nhiệt độ"></i>
+                    <span class="temp-12h">23</span><sup>o</sup>  <br>
+                    <i class='bx bx-cloud-light-rain bx-tada icon-rain-12h hide' ></i>
+                    <i class='bx bx-sun bx-spin icon-sun-12h' ></i>
+                    <i class='bx bx-cloud bx-tada icon-cloud-12h hide' title="Mô tả ngắn"></i>
+                    <span class="sky-12h">cloud</span>
+                </div>
+    
+               
+                <div class="icon">
+                    <p class="time">18:00</p>
+                    <i class='bx bx-doughnut-chart bx-spin temp-icon' title="Nhiệt độ"></i>
+                    <span class="temp-18h">23</span><sup>o</sup>  <br>
+                    <i class='bx bx-cloud-light-rain bx-tada icon-rain-18h hide' ></i>
+                    <i class='bx bx-sun bx-spin icon-sun-18h' ></i>
+                    <i class='bx bx-cloud bx-tada icon-cloud-18h hide' title="Mô tả ngắn"></i>
+                    <span class="sky-18h">cloud</span>
+                </div>
+                   
+            </div>
+            
+    
+        </div>
+
+
+        <div class="home hide">
+                    
+        </div>
+    </div>
+
+    <div class="chevron">
+        <i class='bx bxs-chevron-left icon-left hide'  ></i>
+        <i class='bx bxs-chevron-right icon-right hide' ></i>
+    </div>
+
+
+    <p class="last">DESIGN & CODE BY HOANG HUY</p>
+
+    <script src="weather-ver2.js"></script>
+</body>
+</html>

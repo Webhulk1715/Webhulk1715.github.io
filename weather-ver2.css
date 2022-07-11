@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide{
+    display: none;
+}
+
+/* font-family: 'Righteous', cursive; */
+/* font-family: 'Koulen', cursive; */
+/* font-family: 'Dosis', sans-serif; */
+
+.p1{
+    font-family: 'Righteous', cursive;
+    color: white;
+    text-shadow: 5px 5px 5px rgb(0,0,0.5);
+    font-size: 38px;
+    text-align: left;
+    animation-name: left;
+    animation-duration: 1.5s;
+}
+
+.p2{
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    text-shadow: 5px 5px 5px rgb(0,0,0.5);
+    font-size: 17px;
+    margin-top: 10px;
+    text-align: left;
+    animation-name: left;
+    animation-duration: 2s;
+}
+
+.city,.country{
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    font-size: 30px;
+}
+
+.title{
+    top: 30px;
+    position: absolute;
+    padding: 7px;
+    text-align: center;
+    transition: 0.7s;
+}
+
+.start{
+    width: 90px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    margin-top: 160px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    box-shadow: 3px 3px 3px rgb(0,0,0.5);
+    background-color: rgb(255,255,255,0.7);
+    transition: 0.3s;
+    animation-name: top;
+    animation-duration: 1.5s;
+}
+
+.notification{
+    text-shadow: 3px 3px 3px rgb(0,0,0.5);
+    position: absolute;
+    top: 30px;
+    color: white;
+    animation-name: left;
+    animation-duration: 1.5s;
+}
+
+.start:hover{
+    background-color: white;
+}
+
+.location{
+    text-align: center;
+    margin: 10px;
+}
+
+.date{
+    text-align: center;
+}
+
+.temp-n{
+    text-align: center;
+    font-size: 80px;
+}
+
+.short{
+    text-align: center;
+    font-size: 25px;
+}
+
+.short i{
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* transition: 0.7s; */
+    height: 100vh;
+    position: relative;
+    font-family: 'Dosis', sans-serif;
+    /* background: linear-gradient(to bottom,rgb(0,0,0,0.8),rgb(0,0,0,0.4)), url(wt-img/dragon.jpg) center/cover no-repeat; */
+    background: linear-gradient(to top,rgb(0,0,0,0.9),rgb(0,0,0,0.3)) ,url(wt-img/cool3.jpg) no-repeat center/cover;
+}
+
+.input{
+    font-family: 'Dosis', sans-serif;
+    padding: 0px 10px 0px;
+    border: none;
+    outline: none;
+    width: 240px;
+    height: 30px;
+    box-shadow: 3px 3px 3px rgb(49, 49, 49);
+    background: rgb(255,255,255,0.8);
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    transition: 0.4s;
+}
+
+.search-bt:hover , input:hover{
+    background: rgb(255,255,255);
+}
+
+.search-bt{
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    color: black;
+    font-size: 20px;
+    box-shadow: 3px 3px 3px rgb(49, 49, 49);
+    background: rgb(255,255,255,0.8);
+    margin-left: 5px;
+    transition: 0.4s;
+}
+
+.last{
+    color: rgb(255,255,255,0.7);
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    text-shadow: 5px 5px 5px rgb(0,0,0.7);
+    font-size: 13px;
+}
+
+.wt-card{
+    transition: 0.7s;
+    color: white;
+    width: 85%;
+    height: 533px;
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 5px 5px 5px rgb(0,0,0.5);
+    /* background: url(wt-img/dragon.jpg) no-repeat center/cover ; */
+    background: linear-gradient(to bottom,rgb(0,0,0,0.6),rgb(0,0,0,0.0)) , url(wt-img/cool3.jpg) no-repeat center/cover;
+    box-shadow: 3px 3px 3px rgb(14, 14, 14,0.3);
+    transition: 0.7s;
+    animation-name: top;
+    animation-duration: 1.5s;
+}
+
+
+.time{
+    text-align: center;
+    font-size: 20px;
+}
+
+.icon i{
+    font-size: 23px;
+    vertical-align: middle;
+    transition: 0.6s;
+}
+
+.short-icon{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    transition: 0.6s;
+}
+
+.icon-2 i{
+    font-size: 23px;
+    transition: 0.6s;
+}
+
+.icon-2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.6s;
+}
+
+.div-2{
+    margin-top: 10px;
+    background-color: rgba(17, 16, 16, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:  3px 3px 3px rgb(14, 14, 14,0.6);
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.6s;
+    animation-name: top;
+    animation-duration: 1.5s;
+}
+
+
+
+.div-3{
+    margin-top: 15px;
+    text-align: center;
+    transition: 0.6s;
+}
+
+.last-bt , .next-bt{
+    width: 120px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
+    color: rgb(255,255,255,0.9);
+    box-shadow:  3px 3px 3px rgb(14, 14, 14,0.6);
+    background-color: rgba(17, 16, 16, 0.6);
+    transition: 0.6s;
+}
+
+
+.date-2{
+    margin-top: 23px;
+    text-align: center;
+}
+
+.home{
+    width: 100px;
+    height: 7px;
+    background-color: rgb(255,255,255,0.9);
+    border: none;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    box-shadow:  3px 3px 3px rgb(14, 14, 14,0.6);
+    transition: 0.6s;
+}
+
+
+
+.icon-left{
+    font-size: 30px;
+    position: absolute;
+    left: 6px;
+    bottom: 120px;
+    color: rgb(255,255,255,0.9);
+   
+}
+
+.icon-right{
+    font-size: 30px;
+    position: absolute;
+    right: 6px;
+    bottom: 120px;
+    color: rgb(255,255,255,0.9);
+    animation-name: right;
+    animation-duration: 1.5s;
+}
+
+.icon-right:hover,.icon-left:hover{
+    color: rgb(255,255,255);
+}
+
+.start{
+    color: black;
+}
+
+/* iphone 6/7/8 */
+@media screen and (min-width:375px){
+    .wt-card{
+        height: 530px;
+    }
+
+    .home{
+        margin-top: 15px;
+        background-color: rgb(255,255,255,0.5);
+    }
+
+    .icon-left,.icon-right{
+        bottom: 125px;
+    }
+
+    .icon-left{
+        left: 5px;
+    }
+
+    .icon-right{
+        right: 5px;
+    }
+
+    .date-2{
+        margin-top: 10px;
+    }
+
+    .start{
+        margin-top: 100px;
+    }
+
+    .notification{
+       top: 20px
+    }
+}
+
+/* animation */
+@keyframes down{
+    0%{
+        opacity: 0;
+        transform: translate(0,-100px);
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes top{
+        0%{
+            opacity: 0;
+            transform: translate(0,+100px);
+        }
+    
+    
+        100%{
+            opacity: 1;
+            transform: translate(0,0);
+        }
+}
+
+@keyframes right{
+    0%{
+        opacity: 0;
+        transform: translate(+100px,0);
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes left{
+    0%{
+        opacity: 0;
+        transform: translate(-100px,0);
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+/* iphone 6/7/8 plus*/
+@media screen and (min-width:414px){
+    .wt-card{
+        height: 530px;
+    }
+
+    .home{
+        margin-top: 10px;
+    }
+
+    .icon-left,.icon-right{
+        bottom: 165px;
+    }
+}
+
+/* iphone x */
+@media screen and (min-height:812px){
+    .wt-card{
+        height: 530px;
+    }
+
+    .home{
+        margin-top: 15px;
+        background-color: rgb(255,255,255,0.5);
+    }
+
+    .icon-left,.icon-right{
+        bottom: 205px;
+    }
+
+    .icon-left{
+        left: 5px;
+    }
+
+    .icon-right{
+        right: 5px;
+    }
+
+    .date-2{
+        margin-top: 10px;
+    }
+}
+
+/* small tablet */
+@media screen and (min-width:600px){
+    .icon-left{
+        left: 75px;
+    }
+
+    .icon-right{
+        right: 75px;
+    }
+
+    .icon-left,.icon-right{
+        bottom: 135px;
+    }
+
+    .wt-card{
+        height: 550px;
+    }
+
+    .home{
+        margin-top: 20px;
+    }
+
+}
+
+/* i pad */
+@media screen and (min-width:768px){
+    .icon-left,.icon-right{
+        bottom: 245px;
+    }
+
+    .icon-left{
+        left: 95px;
+    }
+
+    .icon-right{
+        right: 95px;
+    }
+}
+
+/* ipad pro */
+@media screen and (min-width:1024px){
+    .icon-left,.icon-right{
+        bottom: 415px;
+    }
+
+    .icon-left{
+        left: 270px;
+    }
+
+    .icon-right{
+        right: 270px;
+    }
+
+    .wt-card{
+        width: 60%;
+    }
+
+
+}
+
+@media screen and (min-width:1920px){
+    .icon-left,.icon-right{
+        bottom: 325px;
+    }
+
+    .icon-left{
+        left: 345px;
+    }
+
+    .icon-right{
+        right: 345px;
+    }
+
+    .wt-card{
+        width: 60%;
+    }
+
+
+}
+
+
+.hot{
+    background: linear-gradient(to bottom,rgb(0,0,0,0.6),rgb(0,0,0,0.0)) , url(wt-img/warm2.jpg) no-repeat center/cover;
+}
+
+.hot-bg{
+    background: linear-gradient(to top,rgb(0,0,0,0.9),rgb(0,0,0,0.3)) ,url(wt-img/warm2.jpg) no-repeat center/cover;     
+}
+
+.warm{
+    background: linear-gradient(to bottom,rgb(0,0,0,0.6),rgb(0,0,0,0.0)) , url(wt-img/cold1.jpg) no-repeat center/cover;
+}
+
+.warm-bg{
+    background: linear-gradient(to top,rgb(0,0,0,0.9),rgb(0,0,0,0.3)) ,url(wt-img/cold1.jpg) no-repeat center/cover;     
+}
+
+.cold{
+    background: linear-gradient(to bottom,rgb(0,0,0,0.6),rgb(0,0,0,0.0)) , url(wt-img/warm3.jpg) no-repeat center/cover;
+}
+
+.cold-bg{
+    background: linear-gradient(to top,rgb(0,0,0,0.9),rgb(0,0,0,0.3)) ,url(wt-img/warm3.jpg) no-repeat center/cover;     
+}
